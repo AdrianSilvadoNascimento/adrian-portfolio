@@ -1,0 +1,80 @@
+<section id="contact">
+  <h2 class="section-header">Entre em Contato</h2>
+  <div class="container">
+    <article class="message">
+      <h3>Que prazer te ter por aqui!</h3>
+      <h4>
+        Aprecio o tempo que você tirou para olhar este meu portifólio. Muito
+        obrigado!
+        <br />
+        Sinta-se a vontade para deixar uma mensagem ou chamar para um possível
+        trabalho juntos!
+      </h4>
+    </article>
+    <article class="form">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="user-name">
+          <mat-form-field appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input
+              type="text"
+              matInput
+              name="name"
+              id="name"
+              formControlName="name"
+            />
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Sobrenome</mat-label>
+            <input
+              type="text"
+              matInput
+              name="lastname"
+              id="lastname"
+              formControlName="lastname"
+            />
+          </mat-form-field>
+        </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Seu Email</mat-label>
+          <input
+            type="email"
+            matInput
+            name="email"
+            id="email"
+            formControlName="email"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Assunto</mat-label>
+          <input
+            type="text"
+            matInput
+            name="about"
+            id="about"
+            formControlName="about"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Descrição</mat-label>
+          <textarea
+            rows="4"
+            cols="50"
+            matInput
+            name="description"
+            id="description"
+            formControlName="description"
+          ></textarea>
+        </mat-form-field>
+
+        <button
+          mat-flat-button
+          [ngClass]="contactForm.invalid ? 'invalid' : ''"
+          [disabled]="contactForm.invalid"
+        >
+          Enviar
+        </button>
+      </form>
+    </article>
+  </div>
+</section>

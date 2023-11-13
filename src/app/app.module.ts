@@ -1,16 +1,46 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AppRoutingModule } from './app-routing.module'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { NgOptimizedImage } from '@angular/common'
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatInputModule } from '@angular/material/input'
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatButtonModule } from '@angular/material/button'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+
+import { AppComponent } from './app.component'
+import { HeaderComponent } from './components/header/header.component'
+import { IntroductionComponent } from './components/introduction/introduction.component'
+import { ProjectsComponent } from './components/projects/projects.component'
+import { ContactComponent } from './components/contact/contact.component';
+import { ProjectInfoComponent } from './components/projects/project-info/project-info.component'
+import { FooterComponent } from './components/app-footer/app-footer.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    IntroductionComponent,
+    ProjectsComponent,
+    ContactComponent,
+    ProjectInfoComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatToolbarModule,
+    NgOptimizedImage,
+    BrowserAnimationsModule,
+    FontAwesomeModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

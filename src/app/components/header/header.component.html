@@ -1,0 +1,37 @@
+<mat-toolbar class="header">
+  <mat-toolbar-row class="header-bar">
+    <a [routerLink]="'about-me'">
+      <h2 id="my-name">Adrian Silva</h2>
+    </a>
+    <nav class="menu">
+      <ul class="links">
+        <li>
+          <a
+            href="#introduction"
+            (click)="isActive = !isActive"
+            routerLinkActive="active"
+            >Sobre Mim</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects-collection"
+            (click)="isActive = !isActive"
+            routerLinkActive="active"
+            >Portfólio</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            (click)="isActive = !isActive"
+            routerLinkActive="active"
+            >Entre em Contato</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    
+  </mat-toolbar-row>
+</mat-toolbar>
