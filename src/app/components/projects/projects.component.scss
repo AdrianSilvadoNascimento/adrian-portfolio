@@ -1,7 +1,14 @@
 #projects {
-  width: 75%;
+  width: 100%;
   height: 100vh;
   margin: 50px auto 20vh auto;
+
+  .project-content {
+    width: 75%;
+    height: 100vh;
+    margin: 50px auto 20vh auto;
+
+  }
 
   #projects-collection {
     padding: 15px;

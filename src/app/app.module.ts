@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgOptimizedImage } from '@angular/common'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http'
 
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatInputModule } from '@angular/material/input'

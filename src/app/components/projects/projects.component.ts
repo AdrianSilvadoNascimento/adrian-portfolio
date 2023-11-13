@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core'
+
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { GithubReposService } from 'src/app/services/github-repos.service'
 
 @Component({
   selector: 'app-projects',
@@ -8,10 +10,13 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 })
 export class ProjectsComponent implements OnInit {
   faArrowDown = faArrowDown
+  repos: any[] = []
 
-  constructor() { }
+  constructor(private github: GithubReposService) { }
 
   ngOnInit(): void {
+    this.github.getRepos().subscribe(res => {
+      this.repos = res
+    })
   }
-
 }
