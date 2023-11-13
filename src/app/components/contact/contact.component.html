@@ -1,6 +1,11 @@
 <section id="contact">
   <h2 class="section-header">Entre em Contato</h2>
-  <div class="container">
+
+  <article class="loading" *ngIf="isLoading">
+    <mat-spinner [mode]="'indeterminate'"></mat-spinner>
+  </article>
+  
+  <div class="container" *ngIf="!isLoading">
     <article class="message">
       <h3>Que prazer te ter por aqui!</h3>
       <h4>
