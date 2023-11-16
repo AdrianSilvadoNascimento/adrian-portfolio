@@ -91,10 +91,10 @@
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
   #introduction {
-    height: 100%;
+    height: 95vh !important;
 
     .scroll {
-      bottom: 60px !important;
+      bottom: 80px !important;
     }
     
     .container {
@@ -112,6 +112,10 @@
         margin-bottom: 20px;
         .content-text {
           top: 250px !important;
+        }
+
+        .icons {
+          width: 50% !important;
         }
       }
   
