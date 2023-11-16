@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatButtonModule } from '@angular/material/button'
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatMenuModule } from '@angular/material/menu'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppComponent } from './app.component'
@@ -41,6 +43,8 @@ import { FooterComponent } from './components/app-footer/app-footer.component'
     MatFormFieldModule,
     MatProgressSpinnerModule,
     MatButtonModule,
+    MatSidenavModule,
+    MatMenuModule,
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,

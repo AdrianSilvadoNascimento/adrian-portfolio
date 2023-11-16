@@ -73,3 +73,20 @@
     }
   }
 }
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    width: 100% !important;
+
+    .message, .form {
+      width: 100% !important;
+    }
+
+    .message {
+      h4 {
+        text-align: center !important;
+      }
+    }
+  }
+}

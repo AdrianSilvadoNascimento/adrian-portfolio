@@ -1,0 +1,41 @@
+.nav-container {
+  mat-sidenav {
+    width: 45%;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0px;
+    
+    nav {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 150px;
+      
+      ul {
+        list-style: none;
+
+        :nth-child(2) {
+          margin: 30px 0;
+        }
+
+        li {
+          a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 550;
+            font-size: 17px;
+            transition: 0.2s ease-in;
+
+            &:hover {
+              color: rgba(0, 0, 0, 0.7);
+              font-size: 18px;
+            }
+
+            &:active {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

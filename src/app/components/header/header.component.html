@@ -3,6 +3,11 @@
     <a [routerLink]="'about-me'">
       <h2 id="my-name">Adrian Silva</h2>
     </a>
+
+    <button mat-flat-button class="menu-toggle" (click)="toggleMenu()">
+      <fa-icon [icon]="faBars" size="xl"></fa-icon>
+    </button>
+
     <nav class="menu">
       <ul class="links">
         <li>

@@ -1,5 +1,37 @@
 <app-header id="header"></app-header>
-<app-introduction></app-introduction>
-<app-projects></app-projects>
-<app-contact></app-contact>
-<app-footer></app-footer>
+<mat-sidenav-container class="nav-container">
+  <mat-sidenav #sidenav mode="over" [opened]="toggleSideNav">
+    <nav>
+      <ul class="links">
+        <li>
+          <a
+            href="#introduction"
+            routerLinkActive="active"
+            >Sobre Mim</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects-collection"
+            routerLinkActive="active"
+            >Portfólio</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            routerLinkActive="active"
+            >Entre em Contato</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <app-introduction></app-introduction>
+    <app-projects></app-projects>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
