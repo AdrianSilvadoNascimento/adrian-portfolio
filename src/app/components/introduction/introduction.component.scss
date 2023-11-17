@@ -91,11 +91,7 @@
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
   #introduction {
-    height: 95vh !important;
-
-    .scroll {
-      bottom: 80px !important;
-    }
+    height: calc(100% - 80px) !important;
     
     .container {
       flex-direction: column;
